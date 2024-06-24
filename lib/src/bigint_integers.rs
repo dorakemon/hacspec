@@ -45,7 +45,7 @@ impl Integer for BigInt {
     #[inline]
     #[cfg_attr(feature = "use_attributes", in_hacspec)]
     fn set_bit(self, b: Self, i: usize) -> Self {
-        debug_assert!(b.clone().equal(Self::ONE()) || b.clone().equal(Self::ZERO));
+        debug_assert!(b.clone().equal(Self::ONE()) || b.clone().equal(Self::ZERO()));
         let tmp1 = Self::from_literal(!(1 << i));
         let tmp2 = b << i;
         (self & tmp1) | tmp2

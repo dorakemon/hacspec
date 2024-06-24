@@ -10,7 +10,7 @@ readme = "README.md"
 repository = "https://github.com/hacspec/hacspec"
 
 [dependencies]
-num = { version = "0.4", default-features = false }
+num = { version = "=0.4.2", default-features = false }
 secret_integers = { path = "../utils/secret-integers", optional = true, version = "0.1.7" } #FIXME: publish new version
 abstract_integers = { path = "../utils/abstract-integers", version = "0.1.5", default-features = false } #FIXME: publish new version
 hacspec-attributes = { path = "../utils/attributes",  optional = true, version = "0.1.0-beta.1" }
